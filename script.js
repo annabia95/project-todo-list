@@ -17,8 +17,22 @@ const listaOrdenada = document.querySelector('#lista-tarefas');
 
   listaOrdenada.addEventListener('click', (event) => {
     const li = document.querySelectorAll('li');
+  // Estou percorrendo toda a minha lista e adicionando como cor de fundo a cor branca!
   for (let index = 0; index < li.length; index += 1) {
-    li[index].style.backgroundColor = 'white';
+    li[index].style.backgroundColor = '';
   }
+  // Ao clicar, mudo a minha cor de fundo para rgb(128,128,128)
     event.target.style.backgroundColor = 'rgb(128,128,128)';
   }); 
+
+  // Requisito 9 - Usei como referência a documentação de Class List. link:https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList 
+  function lineThrough(event) {
+    if (event.target.classList.contains('completed')) {
+      event.target.classList.remove('completed');
+    } else {
+      event.target.classList.add('completed');
+    }
+  }
+  
+  listaOrdenada.addEventListener('dblclick', lineThrough);
+
