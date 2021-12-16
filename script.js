@@ -33,6 +33,15 @@ const listaOrdenada = document.querySelector('#lista-tarefas');
       event.target.classList.add('completed');
     }
   }
-  
   listaOrdenada.addEventListener('dblclick', lineThrough);
 
+// Requisito 10 - Usei como referência a monitoria do Douglas para o comando remove ()
+
+function apagaLista (){
+  let newBotao = document.querySelector('#apaga-tudo');
+  newBotao.addEventListener ('click', function () {
+      listaOrdenada.remove();
+    }  
+);
+};
+apagaLista ();
