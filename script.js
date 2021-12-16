@@ -13,7 +13,12 @@ const listaOrdenada = document.querySelector('#lista-tarefas');
     listaOrdenada.appendChild (li); 
 });
 
-// Requisito 7 - Função para criar a cor de fundo de cada item da lista. Tive como referência o Exercício da Agenda Tryber!
-listaOrdenada.addEventListener('click', (event) => {
-  event.target.style.backgroundColor = 'rgb(128, 128, 128)';
-});
+// Requisito 7 e 8 - Função para criar a cor de fundo de cada item da lista. Tive como referência o Exercício da Agenda Tryber!
+
+  listaOrdenada.addEventListener('click', (event) => {
+    const li = document.querySelectorAll('li');
+  for (let index = 0; index < li.length; index += 1) {
+    li[index].style.backgroundColor = 'white';
+  }
+    event.target.style.backgroundColor = 'rgb(128,128,128)';
+  }); 
