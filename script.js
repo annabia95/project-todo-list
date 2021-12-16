@@ -45,3 +45,13 @@ function apagaLista (){
 );
 };
 apagaLista ();
+
+// Requisito 11 - Usei como referência a monitoria do Douglas para o comando remove ()
+const btnRemoveCompleted = document.querySelector('#remover-finalizados');
+btnRemoveCompleted.addEventListener('click', () => {
+  const liSelected = document.querySelectorAll('.completed');
+    for (let index = 0; index < liSelected.length; index += 1) {
+      liSelected[index].remove();
+  }
+}); 
+
