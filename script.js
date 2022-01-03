@@ -1,6 +1,7 @@
 const addInput = document.querySelector('#texto-tarefa');
 const addBtn = document.querySelector('#criar-tarefa');
 const listaOrdenada = document.querySelector('#lista-tarefas');
+const btnSaveTheList = document.querySelector('#salvar-tarefas');
 
 // Requisito 5 e 6 - Usei como referência o seguinte vídeo:https://www.youtube.com/watch?v=-BgTrpvOFFc . A monitoria misnistrada pelo Douglas também ajudou na questão de deixar o input vazio após incluir o texto. Usei uma arrow functions para refatorar o código. link: https://www.w3schools.com/js/js_arrow_function.asp
  addBtn.addEventListener ('click',() => {
@@ -12,6 +13,7 @@ const listaOrdenada = document.querySelector('#lista-tarefas');
     addInput.value = '';
     listaOrdenada.appendChild (li); 
 });
+loadList ();
 
 // Requisito 7 e 8 - Função para criar a cor de fundo de cada item da lista. Tive como referência o Exercício da Agenda Tryber!
 
@@ -19,10 +21,10 @@ const listaOrdenada = document.querySelector('#lista-tarefas');
     const li = document.querySelectorAll('li');
   // Estou percorrendo toda a minha lista e adicionando como cor de fundo a cor branca!
   for (let index = 0; index < li.length; index += 1) {
-    li[index].style.backgroundColor = '';
+    li[index].style.backgroundColor = null;
   }
   // Ao clicar, mudo a minha cor de fundo para rgb(128,128,128)
-    event.target.style.backgroundColor = 'rgb(128,128,128)';
+    event.target.style.backgroundColor = 'rgb(128, 128, 128)';
   }); 
 
   // Requisito 9 - Usei como referência a documentação de Class List. link:https://developer.mozilla.org/pt-BR/docs/Web/API/Element/classList 
@@ -55,3 +57,13 @@ btnRemoveCompleted.addEventListener('click', () => {
   }
 }); 
 
+// Requisito 12 - Usei como referência o exercício 5.4.
+function saveTheList () {
+  const itemList = document.querySelector ('#lista-tarefas').innerHTML;
+  localStorage.setItem('requisito 12', itemList);
+  }
+  btnSaveTheList.addEventListener('click', saveTheList);
+  
+  function loadList () {
+  document.querySelector('#lista-tarefas').innerHTML = localStorage.getItem ('requisito 12');
+  }
