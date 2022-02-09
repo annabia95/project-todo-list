@@ -1,10 +1,25 @@
 Este projeto contém os requisitos realizados por _[Anna Beatriz Garcia Trajano de Sá](www.linkedin.com/in/anna-beatriz-trajano-de-sá)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
-_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
-O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
+# Project To do List
 
-# Boas vindas ao repositório do projeto Lista de Tarefas!
+Desenvolvi uma lista de tarefas usando HTML, CSS e JavaScript.
+
+Veja o exemplo a seguir do layout do projeto!
+
+## Demo
+
+![Demo](img/video.gif)
+
+## Habilidades Desenvolvidas
+
+Neste projeto, desenvolvi as seguintes habilidades:
+
+- Manipular CSS
+
+- Manipular Javascript
+
+## Escopo do Projeto
 
     `Requisitos obrigatórios:`
     - [x] [1 - Adicone à sua lista o título "Minha Lista de Tarefas" em uma tag <header>](#1---adicone-à-sua-lista-o-título-minha-lista-de-tarefas-em-uma-tag-)
@@ -21,9 +36,3 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
     `Requisitos bônus:`
     - [x] [12 - Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava](#12---adicione-um-botão-com-idsalvar-tarefas-que-salve-o-conteúdo-da-lista-se-você-fechar-e-reabrir-a-página-a-lista-deve-continuar-no-estado-em-que-estava)
-    
-# Habilidades
-
-- Manipular CSS
-
-- Manipular Javascript
